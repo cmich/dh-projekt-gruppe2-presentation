@@ -110,12 +110,17 @@
 
 \begin{block}{DCoref}
 \begin{itemize}
-\item DCoref
+\item deterministisches Modul der Stanford CoreNLP
 \begin{itemize}
-\item DCoref
+\item hängt von anderen Modulen ab (pos, lemma, ner, parse)
+\item diese Module müssen in der Pipeline vorher angewendet werden
 \end{itemize}
-\item DCoref
-\item DCoref
+\item arbeitet mit Sieben
+\begin{itemize}
+\item erste Stufe: bevorzugt Recall (detection)
+\item zweite Stufe: Siebe bevorzugen Precision
+\end{itemize} 
+\item Post-Processing: mehr Precision (?)
 \end{itemize}
 \end{block}
 
@@ -145,6 +150,13 @@
 
 \begin{frame}\frametitle{\textcolor{black}{Suche nach dem besten Ansatz}}
 
+\begin{block}{Vergleichsgegenstände}
+\begin{itemize}
+\item Reconcile
+\item DCoref
+\end{itemize}
+\end{block}
+
 \begin{block}{Vergleichspunkte}
 \begin{itemize}
 \item Precision
@@ -155,6 +167,40 @@
 
 \end{frame}
 
+%--- 
+
+\begin{frame}\frametitle{\textcolor{black}{Suche nach dem besten Ansatz}}
+
+\begin{block}{Werkzeug: MMAX}
+\begin{itemize}
+\item Schwierigkeiten bei der Verwendung
+\begin{itemize}
+\item Vergleich war entsprechend auch schwierig
+\end{itemize}
+\end{itemize}
+\end{block}
+
+\begin{block}{Testdaten: Uncle Tom's Cabin}
+\begin{itemize}
+\item erste Hälfte des ersten Kapitels, Reintext
+\begin{itemize}
+\item bis zu dem Wort \emph{Wilberforce}
+\item eindeutige Grenze
+\end{itemize}
+\end{itemize}
+\end{block}
+
+\end{frame}
+
+%--- 
+
+\begin{frame}\frametitle{\textcolor{black}{``{Version Space (Angepasst)}''. \emph{Wikimedia Commons}.}}
+\begin{figure}
+\includegraphics{cm_mmax.png}
+\end{figure}
+
+\end{frame}
+
 %###########################################################################
 
 
@@ -162,12 +208,29 @@
 
 %---
 
-\begin{frame}\frametitle{\textcolor{black}{Formatieren}}
+\begin{frame}\frametitle{\textcolor{black}{Formatieren: Reconcile}}
 
-\begin{block}{Formatieren}
+\begin{block}{Reconcile}
 \begin{itemize}
 \item Formatieren
 \begin{itemize}
+\item Formatieren
+\item Formatieren
+\end{itemize}
+\end{itemize}
+\end{block}
+
+\end{frame}
+
+%---
+
+\begin{frame}\frametitle{\textcolor{black}{Formatieren: DCoref}}
+
+\begin{block}{DCoref}
+\begin{itemize}
+\item Formatieren
+\begin{itemize}
+\item Formatieren
 \item Formatieren
 \end{itemize}
 \end{itemize}
@@ -182,7 +245,22 @@
 
 %---
 
-\begin{frame}\frametitle{\textcolor{black}{Indizieren}}
+\begin{frame}\frametitle{\textcolor{black}{Indizieren: Reconcile}}
+
+\begin{block}{Indizieren}
+\begin{itemize}
+\item Indizieren
+\begin{itemize}
+\item Indizieren
+\end{itemize}
+\end{itemize}
+\end{block}
+
+\end{frame}
+
+%---
+
+\begin{frame}\frametitle{\textcolor{black}{Indizieren: DCoref}}
 
 \begin{block}{Indizieren}
 \begin{itemize}
