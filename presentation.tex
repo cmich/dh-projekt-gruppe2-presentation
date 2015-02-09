@@ -157,6 +157,13 @@
 \end{itemize}
 \end{block}
 
+\begin{block}{Ohne Barth}
+\begin{itemize}
+\item nur Reintext als Eingabe
+\item Zeitgründe
+\end{itemize}
+\end{block}
+
 \begin{block}{Vergleichspunkte}
 \begin{itemize}
 \item Precision
@@ -175,7 +182,7 @@
 \begin{itemize}
 \item Schwierigkeiten bei der Verwendung
 \begin{itemize}
-\item Vergleich war entsprechend auch schwierig
+\item Vergleich war entsprechend auch schwierig/unmöglich
 \end{itemize}
 \end{itemize}
 \end{block}
@@ -194,10 +201,42 @@
 
 %--- 
 
-\begin{frame}\frametitle{\textcolor{black}{``{Version Space (Angepasst)}''. \emph{Wikimedia Commons}.}}
+\begin{frame}\frametitle{\textcolor{black}{{MMAX - Beispiel der Anzeige}}}
 \begin{figure}
-\includegraphics[height=7cm]{cm_mmax.jpg}
+\includegraphics[height=7.25cm]{cm_mmax.jpg}
 \end{figure}
+
+\end{frame}
+
+%--- 
+
+\begin{frame}\frametitle{\textcolor{black}{Fortsetzung der Suche ohne MMAX}}
+
+\begin{block}{Standard finden ohne Werkzeug}
+\begin{itemize}
+\item Reconcile-Ausgabe für Testdaten als Ausgangspunkt
+\item korrigierte Version von zwei Annotatoren im gleichen Format erstellt
+\begin{itemize}
+\item DCoref-Ausgabeformat umgewandelt in Reconcile-Ausgabeformat
+\end{itemize}
+\end{itemize}
+\end{block}
+
+\begin{block}{Scorer für Reconcile-Ausgabe}
+\begin{itemize}
+\item wird für beide korrigierten Versionen verwendet
+\item Ergebnisse: Reconcile
+\begin{itemize}
+\item bis zu dem Wort \emph{Wilberforce}
+\item eindeutige Grenze
+\end{itemize}
+\item Ergebnisse: Reconcile
+\begin{itemize}
+\item bis zu dem Wort \emph{Wilberforce}
+\item eindeutige Grenze
+\end{itemize}
+\end{itemize}
+\end{block}
 
 \end{frame}
 
@@ -224,15 +263,73 @@
 
 %---
 
-\begin{frame}\frametitle{\textcolor{black}{Formatieren: DCoref}}
+\begin{frame}[fragile]\frametitle{\textcolor{black}{Formatieren: DCoref}}
 
 \begin{block}{DCoref}
 \begin{itemize}
-\item Formatieren
-\begin{itemize}
-\item Formatieren
-\item Formatieren
+\item Input: Reintext
+\begin{verbatim}
+And the trader leaned back in his chair, and folded  
+his arm, with an air of virtuous decision, apparently
+considering himself a second Wilberforce. 
+\end{verbatim}
 \end{itemize}
+\end{block}
+
+
+
+\end{frame}
+
+%---
+
+\begin{frame}[fragile]\frametitle{\textcolor{black}{Formatieren: DCoref}}
+
+\begin{block}{DCoref}
+\begin{itemize}
+\item Output, unformatiert: XML
+\begin{small}\begin{verbatim}
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences/>
+    <coreference>
+      <coreference>
+        <mention representative="true"/>
+        <mention/>
+      </coreference>
+      <coreference/>
+    </coreference>
+  </document>
+</root>
+\end{verbatim}
+\end{small}
+\end{itemize}
+\end{block}
+
+\end{frame}
+
+%---
+
+\begin{frame}[fragile]\frametitle{\textcolor{black}{Formatieren: DCoref}}
+
+\begin{block}{DCoref}
+\begin{itemize}
+\item Output, formatiert für Gruppe 3: XML
+\begin{small}\begin{verbatim}
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<chapter id="1" title="In Which [...] Humanity">
+  <sentences/>
+  <coreferences>
+    <coreference id="1">
+      <mention representative="true">
+      <mention/>
+    </coreference>
+    <coreference/>
+  </coreferences>
+</chapter>
+\end{verbatim}
+\end{small}
 \end{itemize}
 \end{block}
 
