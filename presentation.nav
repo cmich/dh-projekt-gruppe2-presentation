@@ -27,33 +27,35 @@
 \headcommand {\beamer@framepages {8}{8}}
 \headcommand {\slideentry {2}{1}{3}{9/9}{Vergleichen}{0}}
 \headcommand {\beamer@framepages {9}{9}}
-\headcommand {\beamer@subsectionentry {0}{2}{2}{10}{Formatieren}}\headcommand {\beamer@subsectionpages {7}{9}}
-\headcommand {\slideentry {2}{2}{1}{10/10}{Formatieren}{0}}
+\headcommand {\slideentry {2}{1}{4}{10/10}{Vergleichen}{0}}
 \headcommand {\beamer@framepages {10}{10}}
-\headcommand {\slideentry {2}{2}{2}{11/11}{Formatieren}{0}}
+\headcommand {\beamer@subsectionentry {0}{2}{2}{11}{Formatieren}}\headcommand {\beamer@subsectionpages {7}{10}}
+\headcommand {\slideentry {2}{2}{1}{11/11}{Formatieren}{0}}
 \headcommand {\beamer@framepages {11}{11}}
-\headcommand {\beamer@subsectionentry {0}{2}{3}{12}{Indizieren}}\headcommand {\beamer@subsectionpages {10}{11}}
-\headcommand {\slideentry {2}{3}{1}{12/12}{Indizieren}{0}}
+\headcommand {\slideentry {2}{2}{2}{12/12}{Formatieren}{0}}
 \headcommand {\beamer@framepages {12}{12}}
-\headcommand {\slideentry {2}{3}{2}{13/13}{Indizieren}{0}}
+\headcommand {\beamer@subsectionentry {0}{2}{3}{13}{Indizieren}}\headcommand {\beamer@subsectionpages {11}{12}}
+\headcommand {\slideentry {2}{3}{1}{13/13}{Indizieren}{0}}
 \headcommand {\beamer@framepages {13}{13}}
-\headcommand {\sectionentry {3}{Demonstration}{14}{Demonstration}{0}}
-\headcommand {\beamer@sectionpages {7}{13}}
-\headcommand {\beamer@subsectionpages {12}{13}}
-\headcommand {\beamer@subsectionentry {0}{3}{1}{14}{Reconcile}}\headcommand {\beamer@subsectionpages {14}{13}}
-\headcommand {\slideentry {3}{1}{1}{14/14}{Reconcile}{0}}
+\headcommand {\slideentry {2}{3}{2}{14/14}{Indizieren}{0}}
 \headcommand {\beamer@framepages {14}{14}}
-\headcommand {\slideentry {3}{1}{2}{15/15}{Reconcile}{0}}
+\headcommand {\sectionentry {3}{Demonstration}{15}{Demonstration}{0}}
+\headcommand {\beamer@sectionpages {7}{14}}
+\headcommand {\beamer@subsectionpages {13}{14}}
+\headcommand {\beamer@subsectionentry {0}{3}{1}{15}{Reconcile}}\headcommand {\beamer@subsectionpages {15}{14}}
+\headcommand {\slideentry {3}{1}{1}{15/15}{Reconcile}{0}}
 \headcommand {\beamer@framepages {15}{15}}
-\headcommand {\beamer@subsectionentry {0}{3}{2}{16}{DCoref}}\headcommand {\beamer@subsectionpages {14}{15}}
-\headcommand {\slideentry {3}{2}{1}{16/16}{DCoref}{0}}
+\headcommand {\slideentry {3}{1}{2}{16/16}{Reconcile}{0}}
 \headcommand {\beamer@framepages {16}{16}}
-\headcommand {\slideentry {3}{2}{2}{17/17}{DCoref}{0}}
+\headcommand {\beamer@subsectionentry {0}{3}{2}{17}{DCoref}}\headcommand {\beamer@subsectionpages {15}{16}}
+\headcommand {\slideentry {3}{2}{1}{17/17}{DCoref}{0}}
 \headcommand {\beamer@framepages {17}{17}}
-\headcommand {\slideentry {3}{2}{3}{18/18}{DCoref}{0}}
+\headcommand {\slideentry {3}{2}{2}{18/18}{DCoref}{0}}
 \headcommand {\beamer@framepages {18}{18}}
-\headcommand {\beamer@partpages {1}{18}}
-\headcommand {\beamer@subsectionpages {16}{18}}
-\headcommand {\beamer@sectionpages {14}{18}}
-\headcommand {\beamer@documentpages {18}}
-\headcommand {\def \inserttotalframenumber {10}}
+\headcommand {\slideentry {3}{2}{3}{19/19}{DCoref}{0}}
+\headcommand {\beamer@framepages {19}{19}}
+\headcommand {\beamer@partpages {1}{19}}
+\headcommand {\beamer@subsectionpages {17}{19}}
+\headcommand {\beamer@sectionpages {15}{19}}
+\headcommand {\beamer@documentpages {19}}
+\headcommand {\def \inserttotalframenumber {11}}
