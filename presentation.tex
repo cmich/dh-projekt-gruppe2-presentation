@@ -225,17 +225,16 @@
 \begin{block}{Scorer für Reconcile-Ausgabe}
 \begin{itemize}
 \item wird für beide korrigierten Versionen verwendet
-\item Ergebnisse: Reconcile
-\begin{itemize}
-\item bis zu dem Wort \emph{Wilberforce}
-\item eindeutige Grenze
+\item Ergebnisse:
 \end{itemize}
-\item Ergebnisse: Reconcile
-\begin{itemize}
-\item bis zu dem Wort \emph{Wilberforce}
-\item eindeutige Grenze
-\end{itemize}
-\end{itemize}
+\begin{center}
+  \begin{tabular}{ l || c | c | c ||  r }
+				& Reconcile 	& DCoref 	& DCoref (PP) 	& \\ \hline \hline
+    	Precision 	& 0.99673 	& 0.74510	& 0.74837		& \\ \hline
+    	Recall     	& 0.97917 	& 0.35775 	& 0.33861 		& \\ \hline
+    	FScore    	& 0.98787  	& 0.48340 	& 0.46625 		& \\ \hline
+  \end{tabular}
+\end{center}
 \end{block}
 
 \end{frame}
@@ -342,29 +341,57 @@ considering himself a second Wilberforce.
 
 %---
 
-\begin{frame}\frametitle{\textcolor{black}{Indizieren: Reconcile}}
+\begin{frame}[fragile]\frametitle{\textcolor{black}{Indizieren: Letzter Schritt zur endgültigen Ausgabe}}
 
-\begin{block}{Indizieren}
+\begin{block}{Input}
 \begin{itemize}
-\item Indizieren
-\begin{itemize}
-\item Indizieren
-\end{itemize}
+\item für Gruppe 3 formatierte XML-Dateien für alle Kapitel: 
+\begin{small}\begin{verbatim}
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<chapter id="1" title="In Which [...] Humanity">
+  <sentences/>
+  <coreferences>
+    <coreference id="1">
+      <mention representative="true">
+      <mention/>
+    </coreference>
+    <coreference/>
+  </coreferences>
+</chapter>
+\end{verbatim}
+\end{small}
 \end{itemize}
 \end{block}
 
 \end{frame}
 
-%---
+\begin{frame}[fragile]\frametitle{\textcolor{black}{Indizieren: Letzter Schritt zur endgültigen Ausgabe}}
 
-\begin{frame}\frametitle{\textcolor{black}{Indizieren: DCoref}}
-
-\begin{block}{Indizieren}
+\begin{block}{Output}
 \begin{itemize}
-\item Indizieren
+\item für Gruppe 3 formatierte XML-Datei als Nachschlagewerk
 \begin{itemize}
-\item Indizieren
+\item Nachschlagewerk für kapitelübergreifende Ketten
 \end{itemize}
+\begin{small}\begin{verbatim}
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <chains>
+    <chain text="these two">
+      <coreference>
+        <id>38</id>
+        <chapter>37</chapter>
+      </coreference>
+      <coreference>
+        <id>86</id>
+        <chapter>5</chapter>
+      </coreference>
+    </chain>
+    <chain/>
+  </chains>
+</root>
+\end{verbatim}
+\end{small}
 \end{itemize}
 \end{block}
 
@@ -402,6 +429,35 @@ considering himself a second Wilberforce.
 %###########################################################################
 
 \subsection{DCoref}
+
+%--- 
+
+\begin{frame}[fragile]\frametitle{\textcolor{black}{Ausführoptionen von coref-adder.jar}}
+\begin{small}\begin{verbatim}
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <chains>
+    <chain text="these two">
+      <coreference>
+        <id>38</id>
+        <chapter>37</chapter>
+      </coreference>
+      <coreference>
+        <id>86</id>
+        <chapter>5</chapter>
+      </coreference>
+    </chain>
+    <chain/>
+  </chains>
+</root>
+\end{verbatim}
+\end{small}
+
+\end{frame}
+
+%###########################################################################
+
+\subsection{Indizierung}
 
 %--- 
 
