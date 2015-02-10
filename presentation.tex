@@ -433,25 +433,27 @@ considering himself a second Wilberforce.
 %--- 
 
 \begin{frame}[fragile]\frametitle{\textcolor{black}{Ausführoptionen von coref-adder.jar}}
-\begin{small}\begin{verbatim}
-<?xml version="1.0" encoding="UTF-8"?>
-<root>
-  <chains>
-    <chain text="these two">
-      <coreference>
-        <id>38</id>
-        <chapter>37</chapter>
-      </coreference>
-      <coreference>
-        <id>86</id>
-        <chapter>5</chapter>
-      </coreference>
-    </chain>
-    <chain/>
-  </chains>
-</root>
+
+\begin{block}{Hilfetext}
+\begin{itemize}
+\item Welche Optionen gibt es?
+\begin{scriptsize}\begin{verbatim}
+C:\project\folder>java -jar coref-adder.jar -help
+usage: arguments for coref-adder.jar
+ -corenlp               run Stanford CoreNLP first (optional)
+ -folder <src-folder>   use given folder as source (required)
+ -help                  print this message
+ -pp                    include post-processing for DCoref in the CoreNLP
+                        pipeline, ignored if -corenlp is not chosen
+                        (optional)
+C:\project\folder>
 \end{verbatim}
-\end{small}
+\end{scriptsize}
+\end{itemize}
+\end{block}
+
+\begin{block}{Wie führe ich ``coref-adder.jar'' aus?}
+\end{block}
 
 \end{frame}
 
