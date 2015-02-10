@@ -66,16 +66,19 @@
 
 %---
 
-\begin{frame}\frametitle{\textcolor{black}{Was ist Barth 2.0?}}
+\begin{frame}\frametitle{\textcolor{black}{Was ist BART 2.0?}}
 
-\begin{block}{Barth}
+\begin{block}{Bart - a Beautiful Anaphora Resolution Toolkit}
 \begin{itemize}
-\item Barth
+\item modulares Toolkit 
 \begin{itemize}
-\item Barth
+\item beinhaltet verschiedene Pipelines zur Vorverarbeitung
 \end{itemize}
-\item Barth
-\item Barth
+\item 2 Modi zur Benutzung
+\begin{itemize}
+\item BART-Server als end-to-end Blackbox Lösung
+\item BART-full zum Trainieren eines neuen Modells
+\end{itemize}
 \end{itemize}
 \end{block}
 
@@ -398,7 +401,7 @@ considering himself a second Wilberforce.
 \begin{itemize}
 \item für Gruppe 3 formatierte XML-Datei als Nachschlagewerk
 \begin{itemize}
-\item Nachschlagewerk für kapitelübergreifende Ketten
+\item Koreferenzkettenindex für kapitelübergreifende Ketten
 \end{itemize}
 \begin{small}\begin{verbatim}
 <?xml version="1.0" encoding="UTF-8"?>
@@ -490,11 +493,21 @@ C:\project\folder>
 
 %--- 
 
-\begin{frame}\frametitle{\textcolor{black}{``{Version Space (Angepasst)}''. \emph{Wikimedia Commons}.}}
-\begin{figure}
-\includegraphics[height=7cm]{cm_mmax.jpg}
-\end{figure}
+\begin{frame}[fragile]\frametitle{\textcolor{black}{Ausführen von ,,Coref.class''}}
 
+\begin{block}{Usage of class files in /bin/ :}
+\begin{itemize}
+\item 
+\begin{scriptsize}\begin{verbatim}
+…/project/folder/bin$ java Coref
+java Coref -i <XmlFile> -o <NewFile>
+
+Example (Linux):
+$ java Coref -i ../Input/*.xml -o ../output.xml
+\end{verbatim}
+\end{scriptsize}
+\end{itemize}
+\end{block}
 \end{frame}
 
 \addtocounter{framenumber}{-3}
